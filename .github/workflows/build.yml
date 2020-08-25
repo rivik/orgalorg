@@ -31,3 +31,8 @@ jobs:
     - name: Test
       run: go test -mod=readonly -v .
 
+    - name: Upload build artifact
+      uses: actions/upload-artifact@v2
+      with:
+        name: build
+        path: orgalorg
