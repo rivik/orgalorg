@@ -29,5 +29,5 @@ jobs:
       run: go build -mod=readonly -v .
 
     - name: Test
-      run: go test -v .
+      run: go test -mod=readonly -v .
 
